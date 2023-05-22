@@ -11,15 +11,42 @@
 # ```(*)``` **Усложнение.** Вывод результат на экран сделайте одной строкой
 # (только один print), для этого используйте тернарный оператор
 
+# s=int(input("Input ticket number "))
+# f = s%10+s%100//10+s%1000//100
+# m = s%10000//1000+s%100000//10000+s%1000000//100000
+# if s<=999999 and s>100000 and f==m:
+#     print(f"Yes, {m} = {f}")
+# elif s>999999 or s<100000:
+#     print("Wrong ticket number")
+# else:
+#     print(f"No, {m} != {f}")
+
 s=int(input("Input ticket number "))
-f = s%10+s%100//10+s%1000//100
-m = s%10000//1000+s%100000//10000+s%1000000//100000
-if s<=999999 and s>100000 and f==m:
-    print(f"Yes, {m} = {f}")
-elif s>999999 or s<100000:
-    print("Wrong ticket number")
+# s=123321
+a=str(s)
+b=len(a)
+i=10
+j=1
+m=0
+n=0
+if b%2==0:
+        while b>=1:
+            if b>len(a)//2:
+                m+=s%i//j
+            else: 
+                n+=s%i//j
+            i*=10
+            j*=10 
+            b-=1
+        if m==n:
+            print(f"Yes,{m} = {n}")
+        else:
+            print(f"No,{m} != {n}")
 else:
-    print(f"No, {m} != {f}")
+     print("Input correct number")
+
+                     
+                 
 
 
         

@@ -24,10 +24,10 @@ b = str(a)
 s = 0
 i = 0
 while a >= 1:
-    s += a % 10
+    s += a % 10 
     a = a//10
 print(f"The sum of the numbers of the number {b[0:len(b):1]} is {s}")
-while i <= len(b)-1:
+while i <= len(b)-1: # Построчный вывод 
     if i == 0:
         print(f"({b[i]} + ")
     elif i < len(b)-1:

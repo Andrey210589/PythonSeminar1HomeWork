@@ -6,10 +6,10 @@
 # Примеры/Тесты:
 # 	6 >>>  1  4  1
 # 	24 >>> 4  16  4
-# 	60 >>> 10  40  10
+# 	60 >>> 10  40  101
 
 s = int(input("Input total number of paper cranes "))
-if s % 2 == 0 and s > 0:
+if s % 6 == 0 and s > 0:
     print(f"Katya-{s//6*4} Petya-{s//6} Seryozha-{s//6}")
 else:
     print("Input number not correct")

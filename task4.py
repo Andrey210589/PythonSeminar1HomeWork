@@ -11,4 +11,4 @@ k=int(input("Input k-"))
 if  n*m>k and k%n==0 or n*m>k and k%m==0:
     print("Yes")
 else:
-    print(f"No")
+    print("No")
